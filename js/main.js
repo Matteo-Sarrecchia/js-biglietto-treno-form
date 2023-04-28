@@ -16,15 +16,12 @@ buttonGenera.addEventListener('click',
 
        // calcolo prezzo biglietto (prezzoBase) (0.21€ prezzo X1 Km)
         let prezzoBase = kmPercorrere * 0.21;
-        console.log(prezzoBase);
 
         // sconto del 20% per i minorenni
         let prezzoMinorenni = prezzoBase - (prezzoBase * 0.2);
-        console.log("Prezzo minorenni = ", prezzoMinorenni);
 
         // del 40% per gli over 65
         let prezzoOver65 = prezzoBase - (prezzoBase * 0.4);
-        console.log("Prezzo over65 = ", prezzoOver65)
 
 
         if (eta < 18){ // se è minorenne
@@ -35,13 +32,18 @@ buttonGenera.addEventListener('click',
             messaggio = prezzoBase;
         }
 
-        //output
-        document.getElementById("mio-id").innerHTML = "Il prezzo del tuo biglietto è " + messaggio.toFixed(2) + "€"; 
+        // output nome passeggero
+        document.getElementById("nomePass").innerHTML = nomePasseggero;
+
+        //output prezzo biglietto
+        document.getElementById("prezzo-biglietto").innerHTML = messaggio.toFixed(2) + "€"; 
+
+        console.log(messaggio);
     }
 );
 
 buttonReset.addEventListener('click',
     function(){
-        document.getElementById("form-id").reset();
+        document.getElementById("form-dati").reset();
     }
 );

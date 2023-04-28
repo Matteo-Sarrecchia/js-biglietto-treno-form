@@ -4,34 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Biglietto Treno</title>
 </head>
 <body>
     
-    <div class="form-id">
-       <input type="text" id="nomeUser">
+    <div class="container">
 
-        <input type="number" name="kmDaPercorrere" id="km">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-        <form action="">
-            <select name="età" id="età">
-                <option value="1">0 - 17</option>
-                <option value="25">18 - 64</option>
-                <option value="70">65 - 90+</option>
-            </select>
+        <form action="" id="form-dati">
+
+            <div class="option-row">
+
+                <input type="text" id="nomeUser">
+    
+                <input type="number" name="kmDaPercorrere" id="km">
+        
+                <select name="età" id="età">
+                    <option value="1">0 - 17</option>
+                    <option value="25">18 - 64</option>
+                    <option value="70">65 - 90+</option>
+                </select>
+
+            </div>
             
+    
+            <div class="button-row">
+                <input type="button" value="GENERA BIGLIETTO" id="button-genera">
+    
+                <input type="button" value="RESET" id="button-reset">  
+            </div>
+           
+     
         </form>
 
-        
-        <input type="button" value="GENERA BIGLIETTO" id="button-genera">
-
-        <input type="button" value="RESET" id="button-reset">
- 
     </div>
     
-    <p id="mio-id">
-        risultato
-    </p>
+    <div class="container-risultato">
+
+        <h2>IL TUO BIGLIETTO</h2>
+
+        <div class="biglietto">
+
+            <!-- colonna nome -->
+            <div class="col">
+                <div>
+                    Dati Passeggero
+                </div>
+
+                <p id="nomePass"></p>
+
+            </div>
+
+            <!-- colonna offerta -->
+            <div class="col">
+                <div>
+                    Offerta Biglietto
+                </div>
+
+                <p id="offerta"></p>
+                
+            </div>
+
+            <!-- colonna sconto -->
+            <div class="col">
+                <div>
+                    Sconto
+                </div>
+
+                <p id="sconto"></p>
+
+            </div>
+
+            <!-- colonna codice  -->
+            <div class="col">
+
+                <div>
+                    Codice Biglietto
+                </div>
+
+                <p id="codiceBiglietto"></p>
+                
+            </div>
+
+            <!-- colonna prezzo biglietto -->
+            <div class="col">
+
+                <div>
+                    Prezzo Biglietto
+                </div>
+
+                <p id="prezzo-biglietto"></p>
+                
+            </div>
+
+        </div>
+
+    </div>   
+    
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>

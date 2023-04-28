@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: midnightblue;
+}
+
+.container, .container-risultato{
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid rgb(255, 166, 0);
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 50px;
+}
+
+h2{
+    padding: 20px;
+    background-color: midnightblue;
+    border: 1px solid rgb(255, 166, 0);
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.option-row{
+    margin: 30px;
+}
+
+.option-row input, #età, #button-genera, #button-reset{
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    color: midnightblue;
+    border: 1px solid rgb(255, 166, 0);
+}
+
+.biglietto{
+    border: 1px solid black;
+    min-height: 50px;
+    display: flex;
+}
+
+.col{
+    border: 1px solid black;
+    min-height: 50px;
+    width: 20%;
+    padding: 20px;
+}
+
+.col div{
+    margin: 10px 20px;
+    background-color: midnightblue;
+    border: 1px solid rgb(255, 166, 0);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+}
